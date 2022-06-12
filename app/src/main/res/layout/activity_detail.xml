@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="12dp"
+    android:paddingRight="12dp"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.DetailEsaiActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="185dp"
+            android:layout_marginTop="8dp"
+            android:src="@color/grey"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <io.github.kexanie.library.MathView
+            android:id="@+id/txtSoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            auto:text="When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\)
+        and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$"
+            auto:engine="MathJax"
+            android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            >
+        </io.github.kexanie.library.MathView>
+
+        <LinearLayout
+            android:id="@+id/linear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toBottomOf="@id/txtSoal"
+            app:layout_constraintStart_toStartOf="parent"
+            android:orientation="vertical">
+                <io.github.kexanie.library.MathView
+                    android:id="@+id/txtA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    auto:text="When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\)
+            and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$"
+                    auto:engine="MathJax"
+                    android:layout_marginTop="12dp"
+                    app:layout_constraintTop_toBottomOf="@id/imageView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    >
+                </io.github.kexanie.library.MathView>
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/txtB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                auto:text="When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\)
+            and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$"
+                auto:engine="MathJax"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </io.github.kexanie.library.MathView>
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/txtC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                auto:text="When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\)
+            and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$"
+                auto:engine="MathJax"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </io.github.kexanie.library.MathView>
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/txtD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                auto:text="When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\)
+            and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$"
+                auto:engine="MathJax"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </io.github.kexanie.library.MathView>
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/txtE"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                auto:text="When \\(a \\ne 0\\), there are two solutions to \\(ax^2 + bx + c = 0\\)
+            and they are $$x = {-b \\pm \\sqrt{b^2-4ac} \\over 2a}.$$"
+                auto:engine="MathJax"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@id/imageView"
+                app:layout_constraintStart_toStartOf="parent"
+                >
+            </io.github.kexanie.library.MathView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPembahasan"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Lihat Pembahasan"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/linear" />
+
+
+        <Button
+            android:id="@+id/btnJawab"
+            style="@style/Widget.Material3.Button.Icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Jawab"
+            android:textSize="14sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnPembahasan" />
+
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <FrameLayout
+                android:id="@+id/bottom_sheet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_behavior="@string/bottom_sheet_behavior"
+
+                />
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
